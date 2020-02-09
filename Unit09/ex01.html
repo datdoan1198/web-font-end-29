@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="the_p" class="cls_thep">sdsd</p>
+	<p class="cls_thep">sdsds</p>
+	<p>wsdsdsd</p>
+	<script>
+		document.getElementById('the_p');
+		document.getElementsByClassName('cls_thep');
+		document.getElementsByTagName('p');
+
+		var thep = document.getElementById('the_p');
+		thep.innerHTML = "hello id";
+
+		var thep2 = document.getElementsByClassName('cls_thep')[1];
+		thep2.innerHTML = "hello class";
+
+
+		var thep3 = document.getElementsByTagName('p')[2];
+		thep3.innerHTML = "hello p"
+
+
+	</script>
+</body>
+</html>

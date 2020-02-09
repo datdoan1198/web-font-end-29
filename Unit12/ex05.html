@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<form action="" id="frm">
+		ho va ten <input type="text" name="name"><br>
+		email <input type="text" name="email"><br>
+		phone <input type="number" name="phone"><br>
+		<input type="submit" value="dang ki">
+	</form>
+	<script>
+		$(document).ready(function(){
+			$('#frm').validate({
+				rules:{
+					name : "required",
+					email :{
+						required : true,
+						email: true,
+					},
+					phone:{
+						required : true,
+						number:true,
+						minlength:10,
+						maxlength:11,
+					},
+				},
+				messages:{
+					name : "vui long nhap ten",
+					email:{
+						required:"vui long nhap eamil",
+						eamil:"email khong dung dinh dang"
+					},
+					phone:{
+						required:"vui long nhap so dien thoai",
+						minlength:"so dien thoai phai it nhat 10 so",
+						maxlength:"sdsds"
+					},
+				},
+			})
+		})
+	</script>
+</body>
+</html>

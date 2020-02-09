@@ -1,0 +1,54 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<style type="text/css">
+			div{
+				width: 400px;
+				height: 200px;
+				background: blue;
+			}
+		</style>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nulla vero accusamus nisi ratione eaque ipsum, illum! Vitae odit sint est nihil sapiente deserunt distinctio impedit. Dolorum, eveniet magnam ad fuga, fugit dolor, earum tenetur commodi hic neque possimus doloribus!</p>
+		</div>
+		<button>show</button>
+		<button>hide</button>
+		<button>toggle</button>
+
+		<button>sildeDowl</button>
+		<button>slideUp</button>
+		<button>slideToggle</button>
+		<script>
+			$(document).ready(function(){
+				$('button').eq(0).on('click', function(){
+					$('p').show(2000);
+				});
+				$('button').eq(1).on('click', function(){
+					$('p').hide(2000);
+				});
+				$('button').eq(2).on('click', function(){
+					$('p').toggle(2000);
+				})
+
+
+				$('button').eq(3).on('click', function(){
+					$('p').slideDown(2000);
+				});
+				$('button').eq(4).on('click', function(){
+					$('p').slideUp();
+				});
+				$('div').on('mouseenter', function(){
+					$('div').slideDown().css({'background':'red'});
+				})
+				$('div').on('mouseleave', function(){
+					$('p').slideDown().css({'background':'blue'});
+				})
+				$('div').slideDown(speed,callback);
+			})
+		</script>
+	</body>
+	</html>

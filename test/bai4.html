@@ -1,0 +1,157 @@
+!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<title>Bài 2 với slide</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+			}
+			#slide-show {
+				width: 60%;
+				height: 400px;
+				margin: 0 auto;
+				position: relative;
+				margin-top: 50px;
+			}
+			.img-slide {
+				max-width: 100%;
+				min-width: 100%;
+				max-height: 100%;
+				min-height: 100%;
+				/*display: none;*/
+			}
+
+			#prev {
+				position: absolute;
+				top: 40%;
+				left: 0px;
+				cursor: pointer;
+				background: gray;
+				border: 1px solid gray;
+				opacity: 0.8;
+				width: 50px;
+				display: none;
+			}
+
+			#next {
+				position: absolute;
+				top: 40%;
+				right: 0px;
+				cursor: pointer;
+				background: gray;
+				border: 1px solid gray;
+				opacity: 0.5;
+				width: 50px;
+				display: none;
+			}
+			.conveyor-btn {
+				width: 50%;
+				height: 30px;
+				/*background: red;*/
+				position: absolute;
+				bottom: 2px;
+				right: 0px;
+				opacity: 0.8;
+			}
+			.button-element {
+				width: 20px;
+				height: 20px;
+				margin: 3px;
+				cursor: pointer;
+			}
+		</style>
+		<script type="text/javascript" >
+			window.onload = function(){
+				document.getElementById('slide-show').addEventListener('mouseover', function() {
+					document.getElementById('prev').style.display="block";
+					document.getElementById('next').style.display="block";
+				});
+				document.getElementById('slide-show').addEventListener('mouseout', function() {
+					document.getElementById('prev').style.display="none";
+					document.getElementById('next').style.display="none";
+				});
+
+				var imgSlide 	= document.getElementsByClassName("img-slide");
+				var prev 		= document.getElementById('prev');
+				var next		= document.getElementById('next');
+				var numbSide = 0;
+
+				amimationSlide();
+
+				// button
+
+				prev.addEventListener('click', function() {
+					numbSide--;
+					showSlide();
+				});
+
+				next.addEventListener('click', function() {
+					numbSide++;
+					showSlide();
+				});
+				// end button
+
+				function amimationSlide() {
+					for(var i = 0; i < imgSlide.length; i++) {
+						imgSlide[i].style.display="none";
+					}
+
+					numbSide++;
+					if(numbSide < 0) {
+						numbSide = imgSlide.length - 1;
+					}
+					if(numbSide > imgSlide.length) {
+						numbSide = 1;
+					}
+
+					imgSlide[numbSide-1].style.display="block";
+
+					setTimeout(amimationSlide, 5000);
+				}
+
+				function showSlide() {
+					for(var i = 0; i < imgSlide.length; i++) {
+						imgSlide[i].style.display="none";
+					}
+
+					if(numbSide < 1) {
+						numbSide = imgSlide.length;
+					}
+					if(numbSide > imgSlide.length) {
+						numbSide = 1;
+					}
+
+					imgSlide[numbSide-1].style.display="block";
+				}
+			}
+
+			function elementSlide(n) {
+				for(var i = 0; i < document.getElementsByClassName("img-slide").length; i++) {
+					document.getElementsByClassName("img-slide")[i].style.display="none";
+				}
+				document.getElementsByClassName("img-slide")[n].style.display="block";
+				
+			}
+		</script>
+	</head>
+	<body>
+		<center id="slide-show">
+			<img src="https://4.bp.blogspot.com/-F0F26YgXx40/WOOnf82bccI/AAAAAAAAmEE/DKEaUzgsTOoS4PZj4iNyTzzpEtSvPN25ACLcB/s640/beautiful-landscape-wallpapers-wide.jpg" class="img-slide">
+			<img src="http://4.bp.blogspot.com/-iKu_5qmseFA/VGwBLdcy_EI/AAAAAAAAGU4/sgpb_jF19XU/s1600/anh-phong-canh-dep-nhat-5.jpg" class="img-slide">
+			<img src="https://lh4.googleusercontent.com/-f3rt8RVkcPo/WNtXP2ZBMDI/AAAAAAAARmk/he3VZdTRT00pM6X71-bLSDJPFxUXBSQogCLcB/s1600/shopdohoa.net_HD1920482.JPG" class="img-slide">
+			<img src="http://tiki.vn/tu-van/wp-content/uploads/2015/11/3cb5901c-658a-4e7e-9ba1-6d071e454275.jpg" class="img-slide">
+
+			<!-- button -->
+			<div class="conveyor-btn">
+				<button class="button-element" onclick="elementSlide(0)"></button>
+				<button class="button-element" onclick="elementSlide(1)"></button>
+				<button class="button-element" onclick="elementSlide(2)"></button>
+				<button class="button-element" onclick="elementSlide(3)"></button>
+			</div>
+			<img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Arrow-Back-2-icon.png" id="prev">
+			<img src="http://www.iconarchive.com/download/i95457/iconsmind/outline/Arrow-Next.ico" id="next">
+		</center>
+	</body>
+</html>

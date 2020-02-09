@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<p id="thep1">
+			the p
+			<a href="">hello</a>
+		</p>
+		<p>the p2</p>
+		<p id="thep3">the p3</p>
+	</div>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var a = document.getElementsByTagName('a')[0];
+		a.parentNote.style.color = "red";
+
+		var thep1 =document.getElementsById('thep1');
+		thep1.nextElementSibling.style.color = "green";
+
+		var thep3 =document.getElementsById('thep3');
+		thep3.previousElementSibling.style.color = "blue";
+	</script>
+</body>
+</html>

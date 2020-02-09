@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, obcaecati.</p>
+	<button>click me</button>
+	<script>
+		$(document).ready(function(){
+			$('button').on('click' , function(){
+				$('p').css({'background':'green'})
+			});
+
+
+			$("p").on({
+			mouseenter: function(){
+				$(this).css("background-color","lightgray");
+			},
+			mouseleave: function(){
+				$(this).css("background-color","red");
+			},
+			click: function(){
+				$(this).css("background-color","lightblue");
+			}
+			});
+
+
+		})
+	</script>
+</body>
+</html>

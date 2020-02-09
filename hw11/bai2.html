@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0 ;
+			padding: 0;
+		}
+		body{
+			border: 1px solid black;
+			background: black;
+		}
+		.bg{
+			
+			width: 60%;
+			margin: 0 auto;
+			height: auto;
+			
+		}
+		.text>.firs{
+			color: #b3de48;
+			font-style: italic;	
+		}
+		.text{
+			margin-top: 5%;
+			margin-bottom: 5%;
+		}
+		.text>p{
+			font-style: italic;
+			color: white;
+			height: auto;
+			
+		}
+		span{
+			font-size: 50px;
+			font-style: italic;
+		}
+		.doing{
+			position: relative;
+			background: #484848	;
+			height: 45px;
+			padding-top: 8px;
+			border: 1px solid #202020;
+			border-radius: 5px;
+		}
+		.doing>p{
+			font-weight: bold;
+			color: white;
+		}
+		.menu{
+			background: #292929;
+				border:1px solid #202020;
+			border-radius: 5px;
+		}
+		.menu1{
+			width: 100%;
+			height: auto;
+		}
+		button{
+			position: ;
+			left: -1%;
+			height: 35px;
+			width: 35px;
+			background: #aee92b;
+		}
+		i{
+			color: #678e08;
+		}
+		.minus{
+			position: absolute;
+			border-radius: 5px;
+			border: solid #8ab444;
+			left: -1%;
+			
+		}
+		.plus{
+			position: absolute;
+			border-radius: 5px ;
+			border: solid #8ab444;
+			left: -1%;
+			
+		}
+		p{
+			padding-left: 40px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+		}
+		.conten{
+			display:none ;
+		}
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="bg">
+		<div class="text">
+			<p class="firs">
+				<span style="color: white">Akordeon</span>
+				Vector PSD
+			</p>
+
+			<p>
+				-> A stylo modern accordion
+			</p>
+
+		</div>
+		<div class="menu">
+			<div class="menu1">
+				<div class="doing">
+					<button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+					<button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+					<p>This is an expanded panel</p>
+				</div>	
+
+				<div class="conten">
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nisi aspernatur tempora asperiores eos assumenda officiis esse iste! Obcaecati eveniet, alias! Sed quo fuga corporis pariatur quam sapiente, perspiciatis debitis! 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, praesentium. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, magni!</p>
+				</div>
+			</div>
+
+			<div class="menu1">
+				<div class="doing">
+					<button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+					<button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+					<p>Second Panel</p>
+				</div>	
+
+				<div class="conten">
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nisi aspernatur tempora asperiores eos assumenda officiis esse iste! Obcaecati eveniet, alias! Sed quo fuga corporis pariatur quam sapiente, perspiciatis debitis! 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, error. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, aperiam.</p>
+				</div>
+			</div>
+
+			<div class="menu1">
+				<div class="doing">
+					<button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+					<button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+					<p>Third Panel</p>
+				</div>	
+
+				<div class="conten">
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nisi aspernatur tempora asperiores eos assumenda officiis esse iste! Obcaecati eveniet, alias! Sed quo fuga corporis pariatur quam sapiente, perspiciatis debitis! 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, recusandae 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, perferendis.</p>
+				</div>
+			</div>
+
+			<div class="menu1">
+				<div class="doing">
+					<button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+					<button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+
+					<p>Fourth Panel</p>
+				</div>	
+
+				<div class="conten">
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nisi aspernatur tempora asperiores eos assumenda officiis esse iste! Obcaecati eveniet, alias! Sed quo fuga corporis pariatur quam sapiente, perspiciatis debitis! 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, exercitationem. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, ut.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			var plus = $('.plus');
+			var conten = $('.conten');
+			var minus = $('.minus');
+
+			for (var i = 0; i < plus.length; i++) {
+				$('.plus').eq(i).on('click' ,function(){
+					for (var j = 0; j < conten.length; j++) {
+							conten.eq(j).css({'display':'none'})
+							
+						}
+						$(this).parent().next().css({'display':'block'});
+						$(this).css({'display':'none'});
+						$(this).prev().css({'display':'block'});
+						$(this).next('p').css({'color':'#b3de48'});				
+					})
+			}
+
+			for (var i = 0; i < minus.length; i++) {
+				$('.minus').eq(i).on('click' ,function(){
+					for (var j = 0; j < conten.length; j++) {
+							conten.eq(j).css({'display':'none'})
+							
+						}
+						$(this).parent().next().css({'display':'none'});
+						$(this).css({'display':'none'});
+						$(this).next().css({'display':'block'});
+						$(this).nextAll('p').css({'color':'white'});					
+					})
+			}
+
+			$('.conten>p').css({'color':'white'});
+		})
+	</script>
+</body>
+</html>

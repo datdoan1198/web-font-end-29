@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div{
+			background: linear-gradient(to top right,red,yellow);
+			position: relative;
+			top: 100px;
+			left: 200px;
+			width: 100px;
+			height: 100px;
+			transition: 2s;
+			animation-name: move;
+			animation-duration: 6s;
+			box-shadow: 10px 10px 20px 5px ;
+
+		}
+		@keyframes move{
+			0%{
+				top: 0;left: 0
+			}
+			50%{
+				top: 100px;left: 200px;
+			}
+			
+
+		}
+		div:hover{
+			width: 200px;
+			height: 200px;
+			background: yellow;
+			transform:rotate(45deg);
+			/*transform: scale(2,3);*/
+			box-shadow: 10px 10px 20px 5px ;
+		}
+		p{
+			text-shadow: 5px 5px 1px red;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div>
+		
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, assumenda.</p>
+</body>
+</html>

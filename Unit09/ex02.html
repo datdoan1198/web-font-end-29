@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+	<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, consequatur!</p>
+	<input onclick="clickme()" id="obj" type="text" value="">
+	<script>
+		function clickme(){
+			var e = document.getElementById('obj');
+			var type = e.type;
+			if (type == "text") {
+				e.type = "button";
+			}else{
+				e.type = "text";
+			}
+		}
+
+		var p = document.getElementsByTagName('p')[0];
+		p.style.color = "red";
+		p.style.marginLeft = "200px";
+	</script>
+</body>
+</html>

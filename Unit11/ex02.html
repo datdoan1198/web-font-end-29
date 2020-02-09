@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, doloribus?</p>
+	<div>web font end 29</div>
+	<input type="text" id="name">
+	<script>
+		$(document).ready(function(){
+			$('p').text("<a>hello</a>");
+			$('div').html("<a href=http:google.com>hello</a>")
+			$('#name').val("hello");
+			$('div').css({'colo':'red','background':'yellow'});
+			$('div').width('500px');
+			$('div').height('100px');
+			$('p').remove();//xoa bo toan bo
+			$('p').empty();//xoa noi dung
+
+		});
+	</script>
+</body>
+</html>

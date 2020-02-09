@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<title></title>
+</head>
+<body>
+	
+	<button id="clickme">click me</button>
+	<script>
+		$(document).ready(function(){
+			$('#clickme').on('click', function(){
+				$(this).after("<button id='test'>vasd</button>")
+			})
+			$('body').on('click' ,'#test' , function(){
+				alert("sdasd")
+			})
+		})
+	</script>
+</body>
+</html>

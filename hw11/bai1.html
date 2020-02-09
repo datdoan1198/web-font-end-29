@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="bai1.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="bg">
+		<div class="menu1">
+			<div class="text">jQuery Steps</div>
+			<div class="list_text">
+				<div>Getting Started</div>
+				<div>Examples</div>
+				<div>Documentation</div>
+				<div>Bootgrid new</div>
+				<div>Blog</div>
+				<div>GitHub</div>
+				<div>About</div>
+			</div>
+		</div>
+
+		<div class="menu2">
+			<div class="tab_name">
+				<div>Basic Example</div>
+				<div>basic Form Example</div>
+				<div>Advanced Form Example</div>
+				<div>Dynamic Manipulation Example</div>
+				<div>Tabs Example</div>
+				<div>Vertical Steps Example</div>
+				<div>Async Content Loading Example</div>
+				<div>Embedded Content Example</div>
+			</div>
+
+			<div class="conten">
+				<div class="tab_conten">
+					<div style="background:  #2184be">Account</div>
+					<div>Profile</div>
+					<div>Warning</div>
+					<div>Finish</div>
+				</div>
+				<div class="conten1">
+					<div class="conten_bg" style="display:;">
+						<p>Account Information</p>
+						<hr size="1px" width="93%;" >
+
+						<div class="clearfix"></div>
+						<p>User name</p><input type="text" class="name"><span class="error"></span>
+						<p>PassWord</p><input type="password"  class="name "><span class="error"></span>
+						<p>Confirm PassWord</p><input type="password"  class="name "><span class="error"></span>
+					</div>
+
+					<div class="conten_bg" style="display:none ;">
+						<p>Profile Information</p>
+						<hr size="1px" width="93%;" style="float: left;">
+						<div class="clearfix"></div>
+						<p>First Name</p><input type="text" class="profile"><span class="error"></span>
+						<p>Last Name</p><input type="text"  class="profile"><span class="error"></span>
+						<p>Email</p><input type="text" class="profile"><span class="error"></span>
+						<p>Adress</p><input type="text" class="profile"><span class="error"></span>
+						<p>Age</p><input type="text"  class="profile"><span class="error"></span>
+					</div>
+
+					<div class="conten_bg" style="display:none ;">
+						<p></p>
+						<hr size="1px" width="93%;" style="float: left;">
+						<div class="clearfix"></div>
+					</div>
+
+					<div class="conten_bg" style="display:none ;">
+						<p></p>
+						<hr size="1px" width="93%;" style="float: left;">
+						<div class="clearfix"></div>
+						
+					</div>
+
+					<div class="button_conten">
+						<button class="button_prev" style="display: none;">Previous</button>
+						<button class="button_next">Next</button>
+						<button class="finis" style="background:  #2184be">Finish</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<script>
+		function validateEmail(email) {
+			    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			    return re.test(String(email).toLowerCase());
+			}
+
+		$(document).ready(function(){
+			var conten_bg = $('.conten_bg');
+			var name = $('.name');
+			var conten =$('.tab_conten>div');
+			var index = 0;
+			var pro_file = $('.profile');
+
+
+			function next1(n){
+				for (var i = 0; i < conten_bg.length; i++) {
+					if (n == conten_bg.length-1) {
+						$('.finis').css({'display':'block'},{'top':'0px'})
+						$('.button_next').css({'display':'none'})
+					}
+					conten_bg.css({'display':'none'})					
+				};
+				conten_bg.eq(index).css({'display':'block'})
+				conten.eq(index-1).css({'background':'#9dc8e2'})
+				conten.eq(index).css({'background':' #2184be'})
+				$('.button_prev').css({'background':' #2184be'})
+				$('.button_prev').css({'display':'block'})							
+			}
+
+
+			function prev1(n){
+				for (var i = 0; i < conten_bg.length; i++) {
+					conten_bg.css({'display':'none'})
+					
+					if (n< conten_bg.length-1) {
+						$('.finis').css({'display':'none'})
+						$('.button_next').css({'display':'block'})
+					}
+					if (n==0) {
+						$('.button_prev').css({'display':'none'})
+					}					
+				};
+				conten_bg.eq(index).css({'display':'block'})
+				conten.eq(index+1).css({'background':'#9dc8e2'})
+				conten.eq(index).css({'background':' #2184be'})
+			}
+			
+
+
+
+			$('.button_next').on('click' , function(){
+				for (var i = 0; i < name.length; i++) {			
+					if (name.eq(i).val()=="") {
+						$('.name').eq(i).next().text("Không Được Để Trống")
+						return;		
+					}else{
+						$('.name').eq(i).next().text("")
+					}
+					if (name.eq(2).val() != name.eq(1).val()) {
+						$('.name').eq(2).next().text("Sai mật khẩu")
+						return;
+					}
+				}
+				
+				next1(index+=1);
+
+				for (var i = 0; i < pro_file.length; i++) {
+					if (pro_file.eq(i).val()=="") {
+						$('.profile').eq(i).next().text("Không Được Để Trống");
+						conten.eq(index).css({'background':'red'});
+						
+						return;
+					}else{
+						$('.profile').eq(i).next().text("");
+					}
+					if (!validateEmail($('.profile').eq(2).val())) {
+						$('.profile').eq(2).next().text("Email ko đúng định dạng");
+						conten.eq(index-1).css({'background':'red'});
+						alert("Nhập lại email phần profile")
+						return;
+					}			
+				}
+			})
+
+
+			$('.button_prev').on('click' , function(){
+				prev1(index-=1);
+			})
+			$('.finis').on('click' , function(){
+				
+					alert("Thành Công")
+						
+			})
+		})
+	</script>
+</body>
+</html>

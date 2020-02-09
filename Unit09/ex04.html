@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background: red;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div onmouseover="hover(this)" onmouseout="out(this)"> </div>
+	<script type="text/javascript">
+		function hover(x){
+			x.style.background = "green";
+		}
+		function out(x){
+			x.style.background = "yellow";
+		}
+	</script>
+</body>
+</html>

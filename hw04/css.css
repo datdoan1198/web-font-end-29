@@ -1,0 +1,168 @@
+		*{
+			margin:0px;
+			padding: 0px;
+		}	
+
+
+		body{
+			background: url(anh/bg.jpg);
+			background-size: cover; 
+		}
+		.header{
+			width:100%;
+			height: 50px; 
+		}
+		.main{
+			width: 100%;
+			height: 550px;
+		}
+		.header_div1{			
+			float: left;
+			
+		}
+		.header_div2{
+
+			background:;
+			float: right;
+
+		}
+		.a:hover{
+			background: white;
+		}
+		.a{
+			border-radius: 10px;
+			display: inline-block;
+			/*padding-left:20px;*/			
+		}
+		.f{
+			position: absolute;
+			right: 630px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.e{
+
+			position: absolute;
+			right:  700px;
+			padding-left: 10px;
+			padding-right: 10px;
+
+		}
+		.g{
+			position: absolute;
+			right: 560px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.menu:hover{
+			color: red;
+		}
+		.menu{
+			width: 10%;
+			float: left;
+			
+		}
+		.noidung{
+			
+			float: left;
+			padding-left: 20px; 
+			
+		}		
+		.anh{
+			position: relative;
+			width: 200px;
+			height: 171px;
+			background: white;
+			border-radius:10px;	
+			border-radius: 10px; 		
+		}
+		.anh:hover{
+			transform: scale(1.2);
+			transition: 0.5s;
+			z-index: 1;
+		}
+		.anh_1{
+			border-bottom-right-radius: 10px; 
+			border-bottom-left-radius:10px;
+		}		
+		.so1{
+			position: relative;
+			float: left;
+		}
+
+		
+		.s{
+			font-size: 11px;
+			position: absolute;
+			border-bottom-left-radius:10px;
+			border-bottom-right-radius: 10px; 
+			background:#343a4085;
+			width: 95%;
+			bottom:0px;			
+			padding-left: 10px;
+		}
+		.so2{
+			float: left;
+			margin-left: 10px;			
+		}
+		.so3{
+			float: left;
+			margin-left:10px; 
+		}
+		.so4{
+			float: left;
+			margin-top: 10px;
+		}
+		.so5{
+			float: left;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+		.so6{
+			float: left;
+			margin-left: 10px; 			
+			margin-top:10px; 
+		}
+		.so7{
+			float: left;
+			margin-top: 10px;
+		}
+		
+
+
+		.forder{
+			width: 100%;
+			height: 50px;
+			background:;
+		}
+		.nhan{
+			padding-top :10px;
+			width: 12%;
+			font-size:13px; 
+			float: left;
+		}
+		.link{
+			padding-left: 5px;
+			float: left;
+			padding-top :10px;
+		}
+		.menu a{
+			color: black;
+			text-decoration: none;
+		}
+		.menu a:hover{
+			color: green;
+		}
+		.link a{
+			padding-left: 15px ;
+		}
+		.link a:hover{
+			color:yellow;
+		}
+		
+		.anh_1:hover{
+			color: red;
+		}
+		.noidung div:hover{
+			background: red;
+		}

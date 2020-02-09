@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n = prompt("dsd");
+		do{
+			if (n<0) {
+				document.write("so n phai lon hon 0");
+			}else{
+				document.write("So n la :")
+				document.write(n)
+			}
+		}while(n<0);
+		document.write("<br>")
+		var giaithua = 1;
+		var sum= 0;
+		for (var i = 1; i <= n; i++) {
+			giaithua= giaithua*i;
+			sum += 1/giaithua;
+			
+		}
+		document.write("Tong cua s = 1/1! + 1/2! + ... + 1/n! la :"+sum);
+
+		
+		
+	</script>
+</body>
+</html>

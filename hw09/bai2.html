@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div{
+			width: 500px;
+			height: auto;
+			background: #adbddf;
+			margin: 0 auto;
+		}
+		.input{
+			padding-top: 10px;
+			text-align: ;
+			height: 30px;
+			border: 1px solid black;
+		}
+		.input:hover{
+			background: #4bdc67;
+		}
+		.button{
+			background: white;
+			height: 30px;
+			padding-top: 10px;
+			border: 1px solid black;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div>
+		<div class="input">
+		<input class="chbx" type="checkbox">Lorem ipsum dolor sit amet, consectetur.<br>
+		</div>
+
+		<div class="input">
+		<input class="chbx" type="checkbox">Expedita similique iure, rem unde quod quidem dolore!<br>
+		</div>
+
+		<div class="input">
+		<input class="chbx" type="checkbox">Lorem ipsum dolor sit amet, consectetur.<br>
+		</div>
+
+		<div class="input">
+		<input class="chbx" type="checkbox">Expedita similique iure, rem unde quod quidem dolore!<br>
+		</div>
+
+		<div class="input">
+		<input class="chbx" type="checkbox">Lorem ipsum dolor sit amet, consectetur.<br>
+		</div>
+
+		<div class="input">
+		<input class="chbx" type="checkbox">Expedita similique iure, rem unde quod quidem dolore!<br>
+		</div>
+
+		<div class="input">
+		<input class="chbx" type="checkbox">Lorem ipsum dolor sit amet, consectetur.<br>
+		</div>
+
+		<div class="input">
+		<input class="chbx" type="checkbox">Expedita similique iure, rem unde quod quidem dolore!<br>
+		</div>
+
+		
+	</div>
+	<div class="button">
+		<input id="checkAll" type="checkbox" value="check all" onclick="checkAll()" >Check All
+		<input id="UncheckAll"	type="checkbox" onclick="UncheckAll()"> UnCheck All
+	</div>
+	<script>
+		function UncheckAll(){
+			var unCheck = document.getElementById("UncheckAll");
+			var input = document.getElementsByClassName("chbx");
+			var check_All = document.getElementById("checkAll");			 
+		 	if (unCheck.checked==true) {
+		 		for (var i = 0; i < input.length; i++) {
+		 		input[i].checked = false;
+		 		check_All.checked = false;
+		 		}	 
+		 	}
+
+		}
+		function checkAll() {
+			var check_All = document.getElementById("checkAll");
+		 	var input = document.getElementsByClassName("chbx");
+		 	var unCheck = document.getElementById("UncheckAll");
+		 	if (check_All.checked==true) {
+		 		for (var i = 0; i < input.length; i++) {
+		 		input[i].checked = true;
+		 		unCheck.checked = false;
+		 		}	 
+		 	}
+		}
+	</script>
+</body>
+</html>

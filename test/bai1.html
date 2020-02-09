@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $(".aa").mouseenter(function(){
+    $(".panel").slideDown("slow");
+  });
+  $(".aa").mouseleave(function(){
+    $(".panel").slideUp("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+.panel {
+	width: 100px;
+	height: 200px;
+  border-radius: 20px;
+ display: none;
+  background: red;
+}
+.aa{
+	width: 100px;
+	height: 200px;
+	background: blue;
+  border-radius: 20px;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to slide down panel</div>
+<div class="aa" style="position: relative;">
+	<div class="panel" ></div>
+	<div style="position:absolute;top: 50%;left: 45%;">hello
+  </div>
+	
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div >
+          <p id="message" style="font-size: 100%"> Chào mừng các bạn đến với ZentGroup</p>
+    </div>
+    <input type="button" value="Mặc Định" onclick="defaul()"/>
+    <input id="dd" type="button" value="Phóng To" onclick="enlarge()"/>
+    <input type="button" value="Thu Nhỏ" onclick="zoom_out()"/>
+
+
+   	<script>
+   		 function enlarge(){
+        var el = document.getElementById('message');
+        var style = window.getComputedStyle(el, null).getPropertyValue('font-size');
+        var fontSize = parseFloat(style); 
+        el.style.fontSize = (fontSize + fontSize*2/5) + 'px';
+        }
+        function defaul(){
+        	document.getElementById("message").style.fontSize = "100%";
+        }
+        function zoom_out(){
+          var el = document.getElementById('message');
+          var style = window.getComputedStyle(el, null).getPropertyValue('font-size');
+          var fontSize = parseFloat(style); 
+          el.style.fontSize = (fontSize - fontSize*1/5) + 'px';
+        }
+   	</script>
+</body>
+</html>

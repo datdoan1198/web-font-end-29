@@ -1,0 +1,126 @@
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.bg{
+	width: 80%;
+	margin: 0 auto;
+	height: 500px;
+	background: ;
+}
+.menu1{
+	width: 95%;
+	background:  #2184be ;
+	height: 40px;
+	padding-left: 2.5%;	
+	padding-right: 2.5%;
+	padding-top: 20px;	
+}
+		
+.text{
+	float: left;	
+}
+.list_text>div{
+	display: inline-block;
+	padding-right:10px;
+	padding-left: 10px;
+}
+.list_text{
+
+	float: right;
+}
+
+.menu2{
+	width: 100%;
+	background: ;
+	height: 600px;
+	margin-top: 3%;
+}
+.tab_name>div{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #2184be; 
+}
+.tab_name{
+	width: 29%;
+	background: ;
+	float: left;
+	background: #0606064d;
+	height: auto;
+}
+.conten{
+	float: right;
+	background: ;
+	width: 62%;
+	margin-right: 5%;
+}
+.tab_conten>div{
+	display: inline-block;
+	width: 21.55%;
+	background: white;
+	padding-left: 3%;
+	height: 30px;
+	padding-top: 10px;
+	border-radius: 5px;
+	background: #0606064d;
+}
+.conten1{
+	width: 97%;
+	padding-left: 3%;
+	height: auto;
+	background: #0606064d;
+	padding-top: 3%;
+	margin-top: 3%;
+	border-radius: 5px;
+}
+.conten1>.conten_bg{
+	height: auto;
+	margin-bottom: 20px;
+	background: ;
+
+}
+.conten1>.conten_bg>p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.conten1>.conten_bg>input{
+	border-radius: 5px;
+}
+.button_conten{
+	width: 100%;
+	background: ;
+	height: 30px;
+	position: relative;
+}
+button{
+	height: 30px;
+	border-radius: 5px;
+	border: solid  #2184be;
+}
+.button_prev{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.button_next{
+	background:  #2184be;
+	position: absolute;
+	left: 11%;
+	top: 0;
+}
+.finis{
+	position: absolute;
+	left: 11%;
+	top: 0;
+	display:none;
+}
+
+
+
+
+
+
+.clearfix{
+	clear: both!important;
+}
+		

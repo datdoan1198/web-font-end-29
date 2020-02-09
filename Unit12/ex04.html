@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			margin-bottom: 20px;
+		}
+	</style>
+	<title></title>
+</head>
+<body >
+	<div style="position: relative;">
+		
+	</div>
+	<div>
+		
+	</div>
+	<div>
+		
+	</div>
+	<button>fadeOut</button>
+	<button>fadeIn</button>
+	<button>ddf</button>
+	<script>
+		$(document).ready(function(){
+			$('div').eq(0).css({'background':'red'});
+			$('div').eq(1).css({'background':'green'})
+			$('div').eq(2).css({'background':'blue'})
+
+			$('button').eq(0).on('click', function(){
+				$('div').eq(0).fadeOut('slow');
+				$('div').eq(1).fadeOut(3000);
+			})
+
+			$('button').eq(1).on('click', function(){
+				$('div').eq(0).fadeIn('slow');
+				$('div').eq(1).fadeIn(3000);
+			})
+
+			$('button').eq(2).on('click', function(){
+				$('div').eq(0).animate({
+					left : '+=250px',
+					
+				},5000)
+			})
+
+			$('button').eq(3).on('click', function(){
+				$('div').eq(0).stop({
+					
+				})
+			})
+
+		})
+	</script>
+</body>
+</html>

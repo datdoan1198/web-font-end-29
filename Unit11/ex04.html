@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		.action{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, obcaecati.</div>
+	<button id="prepend">prepend</button>
+	<button id="before">befor</button>
+	<button id="append">append</button>
+	<button id="after">prepend</button>
+	<br>
+
+	<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, eaque.</p>
+	<button>addclass</button>
+	<button>removeClass</button>
+	<button>toggleClass</button>
+	<script>
+		$(document).ready(function(){
+			$('#prepend').on('click' , function(){
+				$('div').prepend('hello prepend ')
+			})
+			$('#before').on('click' , function(){
+				$('div').before('hello before ')
+			})
+			$('#append').on('click' , function(){
+				$('div').append('hello append ')
+			})
+			$('#after').on('click' , function(){
+				$('div').after('hello after')
+			})
+
+			$('button').eq(4).on('click' , function(){
+				$('p').addClass('action');
+			})
+
+			$('button').eq(5).on('click' , function(){
+				$('p').removeClass('action');
+			})
+
+			$('button').eq(6).on('click' , function(){
+				$('p').toggleClass('action');
+			})
+
+			
+
+			
+
+
+		})
+	</script>
+</body>
+</html>

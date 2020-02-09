@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../hw12/bai5.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="menu2">
+			<div class="menu2_1">
+				
+			</div>
+			<div class="menu2_2">
+				<div class="img">
+					<img src="../hw12/img_bai5/images/hero-image.jpg" alt="" >
+				</div>
+				<div class="img">
+					<img src="../hw12/img_bai5/images/hero-image2.jpg" alt="">
+				</div>
+				<div class="img">
+					<img src="../hw12/img_bai5/images/hero-image3.jpg" alt="" >
+				</div>
+
+				<div class="list_dot">
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				var button = $('.dot');
+				var img = $('img');
+				 button.eq(0).on('click',function(){
+				 	for (var i = 0; i < img.length; i++) {
+				 		img.eq(i).css({'display':'none'});
+				 	}
+				 	img.eq(0).css({'display':'block'});
+				 })	
+				 button.eq(1).on('click',function(){
+				 	for (var i = 0; i < img.length; i++) {
+				 		img.eq(i).css({'display':'none'});
+				 	}
+				 	img.eq(1).css({'display':'block'});
+				 })	
+				 button.eq(2).on('click',function(){
+				 	for (var i = 0; i < img.length; i++) {
+				 		img.eq(i).css({'display':'none'});
+				 	}
+				 	img.eq(2).css({'display':'block'});
+				 })	
+
+
+
+				 
+
+				
+			})
+		</script>
+</body>
+</html>

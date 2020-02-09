@@ -1,0 +1,65 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.bg{
+	position: relative;
+	background: blue;
+	width: 100%;
+	height: 1000px;
+}
+
+
+
+.menu1{
+	
+	background: white;
+	width: 95%;
+	height: 40px;
+	margin: 0 auto;
+}	
+.menu1>ul>li{
+	float: left;
+	list-style: none;
+	line-height: 40px;
+	border-right:1px solid black;
+	padding-right: 10px;
+	padding-left:10px;	
+}
+.menu1>ul>.anh{
+	padding-left:50px; 
+}
+.menu1>ul>.sign_in{
+	padding-right: 80px;
+}
+.menu1>ul>.tim_kiem{
+	padding-top:10px;	 
+}
+select{
+	padding-right:30px;
+}
+
+
+.menu2{
+	background:red;
+	width: 95%;
+	height: 90px;
+	margin: 0 auto;
+}
+.menu2_1{
+	padding-left:50px; 
+	padding-right: 50px;
+}
+.menu2_2{
+	padding-left:35px; 
+	padding-right: 35px;
+}
+.menu2_2>ul>li{
+	float: left;
+	list-style: none;
+	border-right: 1px solid black;
+	line-height: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}

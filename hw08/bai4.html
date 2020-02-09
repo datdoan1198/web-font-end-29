@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var sum = 0;
+		var n = prompt("nhập vào số đầu");
+		var m = prompt("nhập vào số cuối");
+		var k = prompt("Số cần tìm");
+		if (n<m) {
+			for (var i = n; i <= m; i++) {
+				if (i%k==0) {
+					sum =sum+i;
+					document.write("Các số chia hết cho "+ k + " là :" + i +"<br>");
+					}
+				}
+				document.write("Tông các số chia hêt cho "+k+" là :"+sum);
+			}
+			
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div *{
+			display: block;
+			border:2px solid black;
+			padding: 5px;
+			margin: 15px;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div>
+		<p>p</p>
+		<h1>h1</h1>
+		<h1>h1_2</h1>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h4>h4</h4>
+	
+	</div>
+	<script>
+		$(document).ready(function(){
+			// $('h2').nextAll().css({'background':'red'});
+			// $('h2').prev().css({'background':'red'});
+
+			// $('h2').siblings().css({'border-color':'green'});
+
+			$('h1').first().css({'border-color':'green'});
+			$('h1').last().css({'border-color':'red'});
+
+			
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div *{
+			display: block;
+			border:1px solid black;
+			padding: 5px;
+			margin: 15px;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div>div
+		<ul>ul
+			<li>li
+				<span>
+					span
+				</span>
+			</li>
+		</ul>
+	</div>
+	<script>
+		// $('span').parent().css({'background':'yellow'});
+		// $('span').parents().css({'background':'yellow'});
+		// $('span').parents('ul').css({'background':'yellow'});
+		$('span').parentsUntil('ul').css({'background':'yellow'});
+
+		// $('div').find('li').css({'border-color':'red'});
+		// $('div').children().css({'border-color':'blue'})
+
+	</script>
+</body>
+</html>
