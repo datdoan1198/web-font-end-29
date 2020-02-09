@@ -1,0 +1,122 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+		.menu{
+			width: 90%;
+			height: 35px;
+			background: -webkit-radial-gradient(top center, circle farthest-corner, orange 10%, red 100%);
+			font-size: 20px;
+			padding-top: 10px;
+			padding-left: 5%;
+			padding-right: 5%;
+			position: relative;
+		}
+
+		.text{
+			float: left;
+			color: white;
+		}
+
+		.conten{
+			float: right;
+		}
+		.tabl_list{
+			position: absolute;
+			right: 3%;
+		}
+
+		.list>li{
+			display: inline-block;
+			padding-right: 20px;
+			padding-left: 20px;
+			color: white;
+			height: 36px;
+		}
+		.conten1{
+			position: relative;
+		}
+		.menu1{
+			position: absolute;
+			top: 36px;
+			left: 0;
+		}
+		.menu1>li{
+			display: inline-block;
+			padding-right: 20px;
+			padding-left: 20px;
+			color: white;
+			height: 36px;
+			display: none;
+		}
+		a{
+			text-decoration: none;
+			font-size: 15px;
+			color: white;	
+		}
+		.menu2{
+			width: 100%;
+			height: 40px;
+			background: white;
+		}
+		.menu2>p{
+			padding-top: 10px;
+			width: 45%;
+			padding-left: 55%;
+		}
+
+		.menu3{
+			width: 100%;
+			text-align: center;
+			padding-top: 8%;
+			padding-bottom: 30%;
+			height: auto;
+
+			 background: -webkit-gradient(linear,left top,left bottom,color-stop(0.3, #ff5000),color-stop(0.7, #330000));
+		}
+		p{
+			color: white;
+		}
+
+		.menu4{
+			width: 80%;
+			height: 100%;
+			background: -webkit-radial-gradient(top center, circle farthest-corner, orange 10%, red 100%);
+			position: absolute;
+			top: 0;
+			overflow: scroll;
+
+		}
+		.header{
+			padding: 2% 0px 10% 10px;
+			width: 100%;
+			text-align: center;
+
+		}
+		.icon{
+			margin-left: 47%;
+			width: 60px;
+			height: 60px;
+			background:white;
+			border-radius: 50%;
+			margin-bottom: 10px;
+			border: 2px solid black;
+		}
+		.fa-rocket{
+			padding-left: 5px;
+			padding-top: 20px;
+		}
+		.menu4_list>div{
+			padding-top: 10px;
+			height: 30px;
+			background:#ffffff00;
+			
+		}
+		.menu4_list1_1>li{
+			padding-left: 50px;
+			padding-top: 10px;
+			height: 30px;		
+		}
+		.menu4_list1_1>li>a{
+			color: black;
+		}

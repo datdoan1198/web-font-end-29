@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="bai3.css">
+</head>
+<body>
+	<div class="bg">
+		<div>Home</div>
+		<div>Profile</div>
+		<div style="position: relative;">Services
+			<ul class="menu">
+				<li>Web Design</li>
+				<li>Web Development</li>
+				<li>Logo and Print Design</li>
+				<li style="position: relative;">Batagor Enak Neth
+					
+					<ul class="menu_1">
+						<li>Web Design</li>
+						<li>Web Development</li>
+						<li>Logo and Print Design</li>
+						<li>Batagor Enak Neth</li>
+					</ul>
+				</li>
+				<li>Ngerujak juga</li>
+			</ul>
+		</div>
+		<div>Fortofolio</div>
+		<div>Pengen ke Arab</div>
+		<div style="position: relative;">Beasiswa S2 Go!! Goo!!
+			<ul class="menu" >
+				<li>Lokal</li>
+				<li>Intermationl</li>
+			</ul>
+		</div>
+		<div>Hire me</div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('.bg').children().on('mouseenter',function(){
+				$('.bg').children().css({'background':'blue'})
+				$(this).css({'background':'orange'},)
+				$(this).children().css({'display':'block'})
+			})
+			$('.bg').children().on('mouseleave',function(){
+				$('.bg').children().css({'background':'blue'})
+				$(this).children().css({'display':'none'})		
+			})
+
+
+
+			$('.menu').children().on('mouseenter',function(){
+				$('.menu').children().css({'background':'blue'})
+				$(this).css({'background':'orange'},)
+				$(this).children().css({'display':'block'},)
+				
+			})
+			$('.menu').children().on('mouseleave',function(){
+				$('.menu').children().css({'background':'blue'})
+				$(this).children().css({'display':'none'})		
+			})
+
+
+			$('.menu_1').children().on('mouseenter',function(){
+				$('.menu_1').children().css({'background':'blue'})
+				$(this).css({'background':'orange'},)
+			})
+
+
+		})
+	</script>
+</body>
+</html>
