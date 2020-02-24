@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,19 +17,20 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body style="position: relative;">
+	<button id="topBtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 	<div class="header">
 		<div class="header1 container">
 			<div class="row" style="font-size: 13px;">
 				<div class="icon col-xl-8 col-3">
 					<i class="fa fa-facebook " aria-hidden="true" style="color: black;"></i>
 					<i class="fa fa-twitter " aria-hidden="true"></i> 
-					<i class="fa fa-twitter " aria-hidden="true"></i> 
+					<i class="fa fa-instagram " aria-hidden="true"></i> 
 					<i class="fa fa-twitter " aria-hidden="true"></i> 
 				</div>
 				<div class="col-xl-2 col-4">
 					<i class="fa fa-phone " aria-hidden="true" style="color: black;"></i> <a href="">012-6532-568-9746</a>
 				</div>
-				<div class="col-xl-2 col-5">
+				<div class="col-xl-2 col-5" style="padding: 0;">
 					<i class="fa fa-envelope-o " aria-hidden="true" style="color: black;"></i> <a href="">KINDESER@GMAIL.COM </a>
 				</div>
 			</div>
@@ -424,6 +426,18 @@
 				}
 				$(this).css({'background':'#0000008f'});
 			})
+
+			$(window).scroll(function(){
+			    if($(this).scrollTop() > 40){
+			      $('#topBtn').fadeIn();
+			    } else{
+			      $('#topBtn').fadeOut();
+			    }
+			  });
+
+			  $("#topBtn").click(function(){
+			    $('html ,body').animate({scrollTop : 0},800);
+			  });
 		})
 	</script>
 </body>
