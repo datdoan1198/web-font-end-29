@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="services.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body style="position: relative;">
+	<div class="header">
+		<div class="header1 container">
+			<div class="row" style="font-size: 13px;">
+				<div class="icon col-xl-8 col-3">
+					<i class="fa fa-facebook " aria-hidden="true" style="color: black;"></i>
+					<i class="fa fa-twitter " aria-hidden="true"></i> 
+					<i class="fa fa-twitter " aria-hidden="true"></i> 
+					<i class="fa fa-twitter " aria-hidden="true"></i> 
+				</div>
+				<div class="col-xl-2 col-4">
+					<i class="fa fa-phone " aria-hidden="true" style="color: black;"></i> <a href="">012-6532-568-9746</a>
+				</div>
+				<div class="col-xl-2 col-5">
+					<i class="fa fa-envelope-o " aria-hidden="true" style="color: black;"></i> <a href="">KINDESER@GMAIL.COM </a>
+				</div>
+			</div>
+		</div>
+		<div class="header2 bg-light" style="padding-top: 1%;padding-bottom: 0%;" style="position: relative;">
+			<div class="container">
+				<div class="row">
+					<div class="header2_bg col-xl-6">
+						<img src="img/images/logo.png" alt="">
+					</div>
+					<div class="header2_list menu col-xl-6" style="font-size: 13px;color: red;">
+						<ul class="list_header nav justify-content-end ">
+							<li class="nav-item ">
+							   <a class="nav-link" href="home.html" style="color:#80d4ff ;background: #007bff;border-top: 4px solid #96badc;border-left:2px solid #96badc;border-radius: 5px !important; ">HOME</a>
+							</li>
+							<li class="nav-item ">
+							    <a class="nav-link" href="department.html">DEPARTMENTS</a>
+							</li>
+							<li class="nav-item ">
+							    <a class="nav-link" href="doctor.html">DOCTORS</a>
+							</li>
+							<li class="nav-item " style="position: relative;">
+							    <a class="nav-link" href="#">PAGES</a>
+							 	<ul class="list_pages">
+							    	<li><a href="about.html">ABOUT</a></li>
+							    	<li><a href="services.html">SERVICES</a></li>
+							    	<li><a href="">ELEMENTS</a></li>
+							    </ul>
+							</li>
+							<li class="nav-item ">
+							    <a class="nav-link" href="#">BLOG</a>
+							</li>
+							<li class="nav-item ">
+							    <a class="nav-link" href="contact.html">CONTACT</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header2_tabl bars" style="">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<div class="header2_tabl times" style="">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu4" style="display:none ;">
+		<ul class="list_header nav flex-column ">
+			<li class="nav-item ">
+				<a class="nav-link" href="home.html" >HOME</a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="department.html">DEPARTMENTS</a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="doctor.html">DOCTORS</a>
+			</li>
+			<li class="nav-item " style="position: ;">
+				<a class="nav-link" href="#">PAGES</a>
+				<ul class="list_pages1">
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="elements.html">ELEMENTS</a></li>
+				</ul>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="#">BLOG</a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="contact.html">CONTACT</a>
+			</li>
+		</ul>
+
+	</div>
+
+	<div class="banner card">
+		<img src="img/images/banner-bg.jpg" style="width: 100%;" class="img-fluid" alt="">
+		<div class="container card-img-overlay">
+			<div style="width: 40%;padding-top: 5%;color: white;height: 100%;font-weight: bold;">
+				<h3 >Offered Services</h3>
+				<p style="font-size: 13px;">Home <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Services</p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container" style="padding-bottom: 5%;padding-top: 5%;">
+		<div class="Offered_Sevices row">
+			<div class="text_hover col-lg-3 col-md-6 text-center">
+				<i class="fa fa-rocket" aria-hidden="true" style="font-size: 30px;"></i><br><br>
+				<h5>24/7 Emergency</h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eaque, alias labore tempore</p>
+			</div>
+			<div class="text_hover col-lg-3 col-md-6 text-center">
+				<i class="fa fa-heartbeat" aria-hidden="true" style="font-size: 30px;"></i><br><br>
+				<h5>Expert Consultation</h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eaque, alias labore tempore</p>
+			</div>
+			<div class="text_hover col-lg-3 col-md-6 text-center">
+				<i class="fa fa-bug" aria-hidden="true" style="font-size: 30px;"></i><br><br>
+				<h5>Intensive Care</h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eaque, alias labore tempore</p>
+			</div>
+			<div class="text_hover col-lg-3 col-md-6 text-center">
+				<i class="fa fa-users" aria-hidden="true" style="font-size: 30px;"></i><br><br>
+				<h5>Family Planning</h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eaque, alias labore tempore</p>
+			</div>
+			<div class="text_hover col-lg-3 col-md-6 text-center">
+				<i class="fa fa-rocket" aria-hidden="true" style="font-size: 30px;"></i><br><br>
+				<h5>24/7 Emergency</h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eaque, alias labore tempore</p>
+			</div>
+			<div class="text_hover col-lg-3 col-md-6 text-center">
+				<i class="fa fa-heartbeat" aria-hidden="true" style="font-size: 30px;"></i><br><br>
+				<h5>Expert Consultation</h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eaque, alias labore tempore</p>
+			</div>
+			<div class="text_hover col-lg-3 col-md-6 text-center">
+				<i class="fa fa-bug" aria-hidden="true" style="font-size: 30px;"></i><br><br>
+				<h5>Intensive Care</h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eaque, alias labore tempore</p>
+			</div>
+			<div class="text_hover col-lg-3 col-md-6 text-center">
+				<i class="fa fa-users" aria-hidden="true" style="font-size: 30px;"></i><br><br>
+				<h5>Family Planning</h5><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eaque, alias labore tempore</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="data_user col-lg-2 col-md-6 col-sm-12">
+					<h4 style="margin: 0;color: white;">Top Products</h4><br>	
+					<p>Managed Website</p>
+					<p>Manged Reputation</p>
+					<p>Power Tools</p>
+					<p>Marketing Service</p>
+				</div>
+				<div class="data_user col-lg-4 col-md-6 col-sm-12">
+					<h4 style="margin: 0;color: white;">Contact Us</h4><br>	
+					<p>56/8, Santa Bullevand, Rocky Beach, San fransisco, Losanges, USA</p>
+					<h5 style="color: white;">012-6532-568-9746</h5>
+					<h5 style="color: white;">012-6532-56897468</h5>
+				</div>
+				<div class="data_user col-lg-6 col-md-6 col-sm-12">
+					<h4 style="color: white;">Newsletter</h4>
+					<p>you can trust us. We only send promo offers, not a single spam</p><br>
+					<div class="row">
+						<div class="form-group col-lg-7">
+                        	<input type="email" class="form-control badge-pill " style="background: grey;border:0;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email Address">
+                   		</div>
+                   		<div class="col-lg-5">
+                   			<div class="btn badge-pill " style="background:#0099ff;color: white;padding-left: 10%; padding-right: 10%;">
+								Get Started <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+							</div>
+                   		</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="row" style="padding-top: 5%;">
+				<div class="col-lg-10 col-md-9 col-sm-12" style="padding: 0;font-size: 15px;">
+					<p>Copyright c 2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true" style="color: #17a2b8;"></i> by <span style="color: #17a2b8;">Kindeser</span></p>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-12 text-center  icon_web icon1">
+					<div class="">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</div>
+					<div class="">
+						<i class="fa fa-twitter" aria-hidden="true"></i> 
+					</div>
+					<div class="">
+						<i class="fa fa-dribbble" aria-hidden="true"></i>
+					</div>
+					<div class="">
+						<i class="fa fa-behance" aria-hidden="true"></i>
+					</div>		 
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script>
+		$('.counter').counterUp({
+		  'time': 2000,
+		  'delay': 10
+		});
+
+		$(document).ready(function(){
+			$('.list_header').children().on('mouseenter', function(){	
+				$('.list_header').children().children().css({'color':'black',})	
+				$('.list_header').children().children().eq(0).css({'color':'#80d4ff','background':' #007bff','border-top':' 4px solid #96badc','border-left':'2px solid #96badc','border-radius':'5px',})
+				$(this).children('a').css({'color':'#80d4ff','background':' #007bff','border-top':' 4px solid #96badc','border-left':'0px solid #96badc','border-radius':'5px',});
+				$(this).children('ul').slideDown(500);
+			}) 
+			$('.list_header').children().on('mouseleave', function(){	
+				$('.list_header').children().children().css({'color':'black','background':'#f8f9fa','border-top':' 0px solid #96badc','border-left':'0px solid #96badc','border-radius':'0px',})	
+				$('.list_header').children().children().eq(0).css({'color':'#80d4ff','background':' #007bff','border-top':' 4px solid #96badc','border-left':'2px solid #96badc','border-radius':'5px',})
+				$(this).children('ul').slideUp(500);
+			}) 
+			$('.list_pages').children().on('mouseenter', function(){
+				$('.list_pages').children().css({'background':'white',})
+				$('.list_pages').children().children().css({'color':'black',})
+				$(this).css({'background':'#007bff',})
+				$(this).children().css({'color':'white','text-decoration':'none'})
+			})
+			$('.icon').children().on('mouseenter',function(){
+				$(this).css({'color':'#0099ff'})
+			})
+			$('.icon').children().on('mouseleave',function(){
+				$(this).css({'color':'black'})
+			})
+			$('.icon1').children().on('mouseenter',function(){
+				$(this).css({'background':'#0099ff'})
+			})
+			$('.icon1').children().on('mouseleave',function(){
+				$(this).css({'background':'black'})
+			})
+			$('.btn').on('mouseenter',function(	){
+				$(this).css({'background':'white','color':'#0099ff'})
+			})
+			$('.btn').on('mouseleave',function(){
+				$(this).css({'background':'#0099ff','color':'white'})
+			})
+			$('.text_hover').on('mouseenter',function(){
+				$(this).children('h5').css({'color':'#0099ff'})
+			})
+			$('.text_hover').on('mouseleave',function(){
+				$(this).children('h5').css({'color':'black'})
+			})
+			$('.text_hover').children('img').on('mouseenter',function(){
+				$(this).css({'transform':'scale(1.1)','transition':'1s','z-index':'1',})
+			})
+			$('.text_hover').children('img').on('mouseleave',function(){
+				$(this).css({'transform':'scale(1)','transition':'1s','z-index':'0',})
+			})
+			$('.bg_hide').on('mouseenter',function(){
+				$(this).children('div').fadeIn("2000");
+			})
+			$('.bg_hide').on('mouseleave',function(){
+				$(this).children('div').fadeOut('2000');
+			})
+
+			$('.list_pages1').children().on('mouseenter', function(){
+				$('.list_pages1').children().css({'background':'white',})
+				$('.list_pages1').children().children().css({'color':'black',})
+				$(this).css({'background':'#007bff',})
+				$(this).children().css({'color':'white','text-decoration':'none'})
+			})
+			$('.bars').on('click',function(){
+				$('.menu4').css({'display':'block'})
+				$('.times').css({'display':'block'})
+				$(this).css({'display':'none'})
+			})
+
+			$('.times').on('click',function(){
+				$('.menu4').css({'display':'none'})
+				$('.bars').css({'display':'block'})
+				$(this).css({'display':'none'})
+			})
+			var aaa = $('.menu4_list').children('div');
+			$('.menu4_list').children('div').on('mouseenter',function(){
+				for (var i = 0; i < aaa.length; i++) {
+					aaa.css({'background':'#ffffff00'});
+				}
+				$(this).css({'background':'#0000008f'});
+			})
+			$('.menu4_list1_1').children().on('mouseenter',function(){
+				for (var i = 0; i < aaa.length; i++) {
+					$('.menu4_list1_1').children().css({'background':'#ffffff00'});
+				}
+				$(this).css({'background':'#0000008f'});
+			})
+		})
+	</script>
+</body>
+</html>
