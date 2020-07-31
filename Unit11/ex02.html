@@ -3,6 +3,11 @@
 <head>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<title></title>
+	<style type="text/css">
+		div{
+			color: red;
+		}
+	</style>
 </head>
 <body>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, doloribus?</p>
@@ -10,10 +15,10 @@
 	<input type="text" id="name">
 	<script>
 		$(document).ready(function(){
-			$('p').text("<a>hello</a>");
+			$('p').text("hello");
 			$('div').html("<a href=http:google.com>hello</a>")
 			$('#name').val("hello");
-			$('div').css({'colo':'red','background':'yellow'});
+			$('div').css({'color':'red','background':'yellow'});
 			$('div').width('500px');
 			$('div').height('100px');
 			$('p').remove();//xoa bo toan bo

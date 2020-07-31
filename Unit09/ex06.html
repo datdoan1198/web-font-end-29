@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<title>Document</title>
 </head>
 <body>
-	<select name="" id="myselect" onchange="change()">
-		<option value="audi">audi</option>
+	<p>Select the car from the list</p>
+	<select id="mySelect" onchange="myFunction()">
+		<option value="Audi">Audi</option>
 		<option value="BMW">BMW</option>
-		<option value="volco">Volco</option>
-		<option value="audi">audi</option>
+		<option value="Mercedes">Mercedes</option>
+		<option value="Volvo">Volvo</option>
 	</select>
-	<form action="" onsubmit="aaa()">
-		Enter your name  : <input type="text" name="">
-		<input type="submit" value="Submit">
-	</form>
+	<p>When you select the car function is triggered which outputs the value of the selected car</p>
+	<p id="demo"></p>
 	<script type="text/javascript">
-		function change(){
-			var x = document.h=getElementById("myselect").value;
-
+		function myFunction() {
+			var x = document.getElementById("mySelect").value;
+			document.getElementById("demo").innerHTML = "You selected" + x;
 		}
-
-		function aaa(){
-			var name = document.getElementsByTagName('input')[0];
-			alert("name = " + name.value);
-			
-		}
-
+		
 	</script>
 </body>
 </html>

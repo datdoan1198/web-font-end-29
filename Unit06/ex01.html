@@ -1,35 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<style>
-		div{
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		nav {
+			position: relative;/*bắt buộc phải có*/
 			width: 100px;
 			height: 100px;
-			background: red;
-			animation-name:changecolor;
-			position: relative;
-			animation-duration: 10s;
-			animation-iteration-count:2;
-			animation-direction: reverse;
+			
+			background-color: red;
+			animation-name: move;
+			animation-duration: 5s;
+			animation-iteration-count:infinite;
+			animation-direction: alternate;
+			animation-timing-function: linear;
+			
+					
+		}
+		nav:hover{
+			transition: 0.2s ;
+			transform: scale(1.1);
+			-o-transition :0.2s;
+			-webkit-transition:all 0.2s;
 
 		}
-		@keyframes changecolor{
-			0%{top: 0;left: 0 ;}
-			25%{top: 0;left: 300px;background: yellow}
-			50%{top: 300px;left: 300px}
-			75%{top: 300px;left: 0}
-			100%{top: 0;left: 0}
+		@keyframes move{
+			0%{
+				top: 0;
+				left: 0;
+			}
+			20%{
+				top: 100px;
+				left: 100px;
+			}
+			40%{
+				top: 0;
+				left: 200px;
+			}
+			60%{
+				top: 100px;
+				left: 300px;
+			}
+			80%{
+				top: 0;
+				left: 400px;
+			}
+			100%{
+				top: 100px;
+				left: 500px;
+			}
 		}
-		
-
-
 	</style>
-	<title></title>
 </head>
 <body>
-	<div>
+	<header>
+		day la header
+	</header>
+	<nav>
 		
-
-	</div>
+		đây  là menu	
+		
+	</nav>
 </body>
 </html>

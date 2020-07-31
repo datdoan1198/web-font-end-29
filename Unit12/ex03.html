@@ -7,6 +7,9 @@
 				height: 200px;
 				background: blue;
 			}
+			p{
+				
+			}
 		</style>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<title></title>
@@ -39,15 +42,12 @@
 					$('p').slideDown(2000);
 				});
 				$('button').eq(4).on('click', function(){
-					$('p').slideUp();
+					$('p').slideUp(2000);
 				});
-				$('div').on('mouseenter', function(){
-					$('div').slideDown().css({'background':'red'});
+				$('button').eq(5).on('click',function(){
+					$('div').slideToggle(2000)
+
 				})
-				$('div').on('mouseleave', function(){
-					$('p').slideDown().css({'background':'blue'});
-				})
-				$('div').slideDown(speed,callback);
 			})
 		</script>
 	</body>

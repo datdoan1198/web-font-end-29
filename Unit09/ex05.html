@@ -4,16 +4,21 @@
 	<title></title>
 </head>
 <body>
-	<input type="text" id="input1">
+	<input type="text" onblur="myBlur(this)" onfocus="myFocus(this)" id="input1">
 	<script type="text/javascript">
-		var input = document.getElementById("input1");
-		input.addEventListener('blur',function(){
-			input.value = input.value.toUpperCase();
-		})
-		input.addEventListener('focus',function(){
-			input.style.background = "red";
-		})
-
+		// var input = document.getElementById("input1");
+		// input.addEventListener('blur',function(){
+		// 	input.value = input.value.toUpperCase();
+		// })
+		// input.addEventListener('focus',function(){
+		// 	input.style.background = "red";
+		// })
+		function myBlur(x){
+			x.style.color = "red";
+		}	
+		function myFocus(x){
+			x.style.color = "green";
+		}
 	</script>
 </body>
 </html>

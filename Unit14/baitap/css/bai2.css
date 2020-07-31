@@ -1,0 +1,202 @@
+*{
+	padding:0 ;
+	margin: 0;	
+	text-decoration:none;
+	list-style: none;
+
+}	
+header{
+}
+body{
+	/*font-family: monospace;*/
+}
+nav {
+	background: #0082e600;
+	display: inline-block;
+	width: 100%;
+	word-spacing: -4px;
+
+}
+.logo{
+	width: 20%;
+	padding: 10px;
+	float: left;
+
+}
+img{
+	width: 100%;
+}
+nav ul{
+	float: right;
+
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 30px;
+	position: relative;
+
+}
+nav ul li a{
+	color: black;
+	text-transform: uppercase;
+}
+
+li:hover{
+	background: #395469;
+	border-radius: 5px;
+}
+li:hover a{
+	color: #c3cbd2;
+}
+.checkbtn{
+	font-size: 20px;
+	color: white;
+	float: right;
+	padding: 25px;
+	display: none;
+}
+#check{
+	display: none;
+}
+.category{
+	position: relative;
+}
+.category ul{
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	display: none;
+	z-index: 1;
+}
+.category:hover ul{
+	display: block;
+}
+.category:hover ul li{
+	background:#0082e6;
+	padding: 10px 20px; 
+}
+.category ul li:hover{
+	background: #395469;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	nav ul li{
+		padding: 20px;
+		transition: 1s;
+	}	
+}
+
+@media screen and (max-width: 767px) {
+
+	.logo{
+		width: 40%;
+		transition: 1S;
+	}
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		background: #0082e6;
+		width: 100%;
+		top: 73px;
+		left: -100%;
+		text-align: center;
+		transition: 2s;
+
+	}
+	nav ul li{
+		display: block;
+		
+	}
+	#check:checked ~ div ul{
+		left: 0;
+	}
+	.category{
+		
+	}
+	.categpry ul{
+		
+	}
+}
+.l-4{
+	width: 33.3%;
+	
+
+}
+.row{
+	display:block;
+}
+
+
+
+.fixed-top{
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.bg-nav{
+   	background: white;
+}
+.list-image{
+	width: 1349px;
+	overflow:hidden ;
+	position: relative;
+}
+.bg-image{
+	transition: all 1s;
+}
+.img{	
+	display: inline-block;
+	width: 1349px;
+	height: 500px;
+	float: left;
+	
+
+
+}
+img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+
+}
+.content-image{
+	width: 80%;
+	position: absolute;
+	top: 80%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: 0 auto;
+
+
+}
+.content-image p{
+ 	width: 50%;
+ 	margin: 0 auto;
+}
+.btn{
+
+}
+
+.btn .fa {
+	font-size:  40px;
+	color: black;
+}
+.fa-chevron-circle-left{
+	position: absolute;
+	top: 35%;
+	left: 5%;
+}
+.fa-chevron-circle-right{
+	position: absolute;
+	top: 35%;
+	right: 5%;
+}
+
+

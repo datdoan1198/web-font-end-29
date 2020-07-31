@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+.maindau{
+	background-image: url(../image/homebg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.xamtrongsuat{
+	background: #0000009e;
+}
+#chumenu{
+	font-size: 12px;
+	font-weight: bold;
+}
+.kichhoat{
+	color: #ff7200;
+	border-bottom: 1px solid #ff7200;
+	transition: .5s;
+}
+.kichhoat>#mauchumenu{
+	color: #ff7200;
+	font-weight: bold;
+}
+#mauchumenu{
+	color: white;
+	transition: .5s;
+}
+.maumenu{
+	background-color: red;
+	transition: .5s;
+}
+.tieude{
+	margin-top: 200px;
+	margin-bottom: 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 60px;
+
+}
+.ghichu{
+	color: white;
+	margin-top: 40px;
+}
+.nutbam{
+	margin-top: 50px;
+	margin-bottom: 100px;
+	padding: 15px 30px;
+	background-color: #ff7200;
+	border: none;
+	font-size: 12px;
+	color: white;
+}
+#hopbam li{
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#hopbam>.active{
+	background-color: #ff7200;
+}
+.nenanh{
+	position: relative;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+	color: black;
+}
+.nenanh img{
+	width: 100%;
+}
+.nenanh:hover .stabmenubghv{
+	display: block;
+}
+.nenanh:hover>div{
+	color: white;
+}
+.stabmenubghv{
+	display: none;
+	transition: .5s;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.nenanh>div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+	transition: .5s;
+}
+.nenanh>div>i{
+    margin-top: 15%;
+    font-size: 160%;
+}
+.nenanh>div>p{
+	font-size: 12px;
+	margin-top: 5%;
+}
+#thanhtieude{
+	width: 200px;
+	height: 2px;
+}
+#thanhtieude>.progress-bar{
+	background-color: #ff7200;
+}
+#rowtab{
+	margin-top: 80px;
+}
+.tieudecon{
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+#rowtab>div>p{
+	margin-top: 100px;
+	font-size: 12px;
+	line-height: 30px;
+}
+#hopbam2{
+	bottom: -60px;
+}
+#hopbam2 li{
+	width: 8px;
+	height: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	border: 1px solid gray;
+}
+#hopbam2>.active{
+	background-color: #ff7200;
+}
+.thongtinanh{
+	color: gray;
+}
+.thongtinanh>h6{
+	font-weight: bold;
+}
+.thongtinanh>p{
+	font-size: 12px;
+	line-height: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.thongtinanh>div>p{
+	font-size: 12px;
+}
+.thongtinanh>div>p>span{
+	font-weight: bold;
+}
+.nutbam2{
+	margin-top: 50px;
+	padding: 15px 30px;
+	border: 1px solid gray;
+	font-size: 12px;
+	color: black;
+	background-color: white;
+	cursor: pointer;
+	transition: .5s;
+	font-weight: bold;
+}
+.nutbam2:hover{
+	background-color: #ff7200;
+	color: white;
+}
+#anhplay{
+	background-image: url(../image/videobg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#carouselExampleIndicators1{
+	margin-bottom: 100px;
+}
+.play{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.play>div{
+	display: inline-block;
+	color: white;
+	font-size: 50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	line-height: 100px;
+	border: 2px solid white;
+	padding-left: 10px;
+	transition: .5s;
+	cursor: pointer;
+}
+.play>div:hover{
+	background-color: white;
+	color: black;
+}
+.play>h5{
+	color: white;
+	margin-top: 50px;
+	font-weight: bold;
+}
+.about{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.abouttrong{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	padding-right: 10%;
+}
+.divhvanh{
+	position: relative;
+}
+.divhvanhhv{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.divhvanh>div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.divhvanh>div>i{
+	font-size: 150%;
+	margin-top: 40%;
+	transition: .5s;
+}
+.canhdivanh{
+	color: gray;
+}
+.canhdivanh>h5{
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.canhdivanh>p{
+	font-size: 14px;
+	line-height: 30px;
+}
+.hovercakhoi{
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.hovercakhoi:hover i{
+	color: white;
+}
+.hovercakhoi:hover .divhvanhhv{
+	display: block;
+}
+.skmenu{
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 100px;
+	display: inline-block;
+	color: black;
+}
+.skmenu:hover .skmenuhv{
+	display: block;
+}
+.skmenu:hover{
+	color: white;
+}
+.skmenuhv{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.skmenu>div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+.skmenu>div>p{
+	font-size: 70%;
+	font-weight: bold;
+	margin-top: 10%;
+	transition: .5s;
+}
+.our{
+	margin-bottom: 100px;
+}
+.our>div>div>p{
+	font-size: 14px;
+	color: gray;
+	line-height: 30px;
+}
+.chuip{
+	color: gray;
+	font-size: 14px;
+}
+#thanhphantram{
+	height: 8px;
+}
+#thanhphantram>.progress-bar{
+	background-color: #ff7200;
+}
+.phantram{
+	margin-bottom: 50px;
+	width: 100%;
+}
+.phantram>h5{
+	float: left;
+	font-weight: bold;
+}
+.phantram>p{
+	float: right;
+}
+.tangdan{
+	background-image: url(../image/counterbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tangdantrong{
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.tangdantrong>h1{
+	font-weight: bold;
+	color: white;
+}
+.tangdantrong>i{
+	font-size: 30px;
+	color: #ff7200;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.tangdantrong>p{
+	color: white;
+	font-size: 12px;
+}
+.ther{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.thertrong{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+.thertrong:hover .therhv{
+	display: block;
+}
+.thertrong:hover i{
+	color: white;
+}
+.thertrong>div{
+	position: relative;
+}
+.therhv{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.thertrong>div>i{
+	position: absolute;
+	top: 16px;
+	left: 18px;
+	font-size: 30px;
+	transition: .5s;
+}
+.thertrong>div>span{
+	font-weight: bold;
+	margin-left: 20px;
+	color: gray;
+}
+.thertrong>div>p{
+	color: gray;
+	font-size: 12px;
+	line-height: 30px;
+	margin-top: 20px;
+}
+.ther2{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.ther2trong{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.ther2trong>img{
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+.ther2trong:hover img{
+	width: 104%;
+	height: 104%;
+	margin-top: -2%;
+	margin-left: -2%;
+}
+.ther2trong>div{
+	background-color: #ff7200b3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	margin-top: 30%;
+	margin-left: 10%;
+	padding: 7%;
+	color: white;
+	font-size: 14px;
+	display: none;
+	transition: .5s;
+}
+.ther2trong:hover>div{
+	display: block;
+}
+.ther2trong>div>p{
+	margin-top: 2%;
+	margin-bottom: 15%;
+	font-size: 12px;
+}
+.ther2trong>div>i{
+	width: 30px;
+	height: 30px;
+	border: 1px solid white;
+	margin-right: 5px;
+	text-align: center;
+	line-height: 30px;
+	transition: .5s;
+	cursor: pointer;
+}
+.ther2trong>div>i:hover{
+	background-color: white;
+	color: #ff7200b3;
+}
+#accordionExample{
+	margin-top: 100px;
+}
+.card-body{
+	color: gray;
+	font-size: 14px;
+}
+#accordionExample>div{
+	border: 1px solid rgba(0,0,0,.125);
+	margin-bottom: 20px;
+}
+#accordionExample>div>div{
+	padding: 0;
+	background-color: #ffffff00;
+	cursor: pointer;
+}
+#accordionExample>div>div:hover .ch_col_icn_h{
+	display: block;
+}
+#accordionExample>div>div:hover i{
+	color: white;
+}
+.ch_col_icn_h{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.hvsub>i{
+	position: absolute;
+    top: 14px;
+    left: 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+.hvsub>span{
+	margin-left: 20px;
+    font-weight: bold;
+}
+#thanhtieude2{
+	height: 2px;
+}
+#thanhtieude2>.progress-bar{
+	background-color: #ff7200;
+}
+@media (max-width: 576px){
+	#centertieude{
+		text-align: center;
+	}
+}
+.progress-bar2{
+	height: 100%;
+	background-color: #ff7200;
+}
+.bamanh>a{
+	font-weight: bold;
+	font-size: .7rem;
+	margin-bottom: 25px;
+	transition: .5s;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+	display: block;
+	transition: .5s;
+}
+.bamanh:hover a{
+	color: #ff7200;
+	text-decoration: none;
+}
+.card{
+    position: relative;
+}
+.card-head{
+    position: relative;
+    overflow: hidden;
+}
+.donganh>div{
+	margin-bottom: 20px;
+	position: relative;
+}
+.donganh>div:hover>div{
+	display: block;
+}
+.donganh>div>div{
+	position: absolute;
+	width: 84%;
+	background-color: #ff7200b3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: 8%;
+	text-align: center;
+	display: none;
+
+}
+.donganh>div>div>div{
+	top: 50%;
+	position: absolute;
+	display: inline-block;
+	margin-left: -10%;
+}
+.donganh>div>div>div>i{
+	color: white;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid white;
+	margin-right: 5px;
+	transition: .5s;
+	cursor: pointer;
+}
+.donganh>div>div>div>i:hover{
+	background-color: white;
+	color: #ff7200b3;
+}
+.anhlike{
+	background-image: url(../image/testbg.jpg);
+	background-repeat: no-repeat;
+}
+.thongtinlike{
+	text-align: center;
+	color: white;
+	padding-bottom: 80px;
+}
+.thongtinlike>i{
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.thongtinlike>p{
+	margin-bottom: 20px;
+	font-size: 12px;
+	line-height: 30px;
+}
+.thongtinlike>p>span{
+	font-weight: bold;
+}
+#hopbam3 li{
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 1px solid gray;
+}
+#hopbam3>.active{
+	background-color: #ff7200;
+}
+.kinhmatngoai>img{
+	position: absolute;
+	width: 70%;
+	right: 0;
+	bottom: 0;
+}
+.kinhmat{
+	margin-top: 20px;
+	float: left;
+	width: 100%;
+}
+.kinhmat>div>div{
+	position: relative;
+	float: left;
+}
+.kinhmat>div>div>i{
+	position: absolute;
+	top: 16px;
+	left: 17px;
+	font-size: 20px;
+}
+.kinhmat>div>div>h5{
+	color: gray;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.kinhmat>div>div>p{
+	color: gray;
+	font-size: 12px;
+}
+.frmdangnhap>div>div>input{
+	margin-bottom: 20px;
+}
+.bando>iframe{
+	width: 100%;
+}
+.thogtinthem{
+	margin-top: 50px;
+}
+.thogtinthem>p{
+	font-size: 12px;
+	color: white;
+	line-height: 30px;
+	margin-top: 30px;
+}
+.tieudecon2{
+	padding-top: 10px;
+	margin-bottom: 25px;
+	font-weight: bold;
+	color: white;
+}
+#thanhtieude3{
+	width: 80%;
+	height: 2px;
+}
+#thanhtieude3>.progress-bar{
+	background-color: #ff7200;
+}
+.thogtinthem>div>p{
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	margin-top: 25px;
+	transition: .5s;
+	margin-bottom: 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.thogtinthem>div>p:hover{
+	color:  #ff7200;
+}
+.otimkiem{
+	margin-top: 30px;
+	border: 1px solid gray;
+	padding: 10px 24px;
+}
+.otimkiem>input{
+	width: 90%;
+	border: none;
+	outline: none;
+	background-color: #262420;
+	color: white;
+}
+.otimkiem>span{
+	color: white;
+}
+.cuoicung>p{
+	color: white;
+	font-size: 12px;
+}
+.cuoicung>p>i{
+	color: red;
+}
+.cuoicung>p>span{
+	color: #ff7200;
+}
+.cuoicung>i{
+	color: white;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid white;
+	margin-left: 5px;
+	transition: .5s;
+	cursor: pointer;
+}
+.cuoicung>i:hover{
+	color: #ff7200;
+	border: 1px solid #ff7200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*cuộn đầu trang*/
+.btn-top {
+	width: 30px;
+	height: 30px;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+    padding: 0;
+    position: fixed;
+    right: 20px;
+    z-index: 9999;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px grey;
+    text-align: center;
+    line-height: 30px;
+    transition: .5s;
+    background-color: #808080d1;
+}
+.btn-top:hover{
+	background-color: #ff7200b3;
+}
+.btn-top i{
+	color: white;
+}

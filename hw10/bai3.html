@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style type="text/css">
+		.anh{
+			width: 1000px;
+			height: 400px;
+			overflow:hidden ;
+			position: relative;
+			border-radius: 10px;
+		}
+		.img{
+			width: 3000px;
+			height: 100%;
+			transition: all 1s;
+		}
+		.chuyen{
+			position: absolute;
+			width: 100%;
+			top: 180px;
+			transition: all 2s;
+		}
+		.button{
+			position: absolute;
+			top: 90%;
+			left: 46%;
+		}
+		button{
+			width: 10px;
+			height: 15px;
+			border:solid black;
+			border-radius: 50%;
+			background-color: black;
+		}
+		img{
+			display: inline;
+			width: 1000px;
+			height: 100%;
+			float: left;
+
+		}
+		.fa{
+			font-size: 40px;
+			color: white;
+			padding-left: 20px;
+		}
+		.fa-chevron-circle-right{
+			position: absolute;
+			left: 93%;
+		}
+	</style>
+</head>
+<body>
+	<div class="anh">
+		<div class="img">	
+			<img  src="img/bg1.jpg" alt="">
+			<img src="img/b2.jpg" alt="">
+			<img src="img/thiep-chuc-mung-nam-moi-8.jpg" alt="">
+		</div>
+		<div class="button text-center">
+			<button class="" value="1"></button>
+			<button class="" value="2"></button>
+			<button class="" value="3"></button>
+		</div>
+		<div class="chuyen">
+
+			<i class="fa fa-chevron-circle-left" aria-hidden="true" onclick="click_left()"></i>
+			<i class="fa fa-chevron-circle-right" aria-hidden="true" onclick="click_right()"></i>
+		</div>
+	</div>
+	<script>
+		var anh = document.getElementsByClassName('anh')[0];
+		var anh_chuyen = document.getElementsByClassName('img')[0];
+		var img = document.getElementsByTagName('img');
+		var bt = document.getElementsByTagName('button');
+
+		var value = anh.clientWidth ;
+
+		var chuyen = 0;
+		max = value * (img.length - 1);
+		index = value * 2;
+
+		for (var i = 0; i < bt.length; i++) {
+			bt[i].addEventListener('click',function(){
+				var index = this.value;
+				// alert(index);
+				chuyen = value* (index-1);
+
+				anh_chuyen.style.marginLeft = "-" + chuyen + "px";
+
+				
+			})
+		}
+
+	
+
+		function click_right(){
+			if (chuyen < max) {
+				chuyen += value;
+				
+			}else{
+				chuyen = 0;
+			}
+			
+			anh_chuyen.style.marginLeft = "-" + chuyen + "px";
+		}
+		function click_left(){
+			if (chuyen == 0) {
+				chuyen = max;
+			}else{
+				chuyen -= value;
+				
+			}
+			
+			anh_chuyen.style.marginLeft = "-" + chuyen + "px";	
+			
+		}
+		// setInterval(function(){
+		// 	click_right();
+		// },3000);
+		
+
+
+	</script>
+	
+
+</body>
+</html>
